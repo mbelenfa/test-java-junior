@@ -1,0 +1,4 @@
+blue  5  4  50000  AA8762  toyota  not a sport car  0
+blue  2  4  500.8  ER4352  hello  not a sport car  0
+black  2  4  3252.2  WE878  kia  not a sport car  0
+black  3  4  65854.2  TR878  bmw  is a sport car  10
