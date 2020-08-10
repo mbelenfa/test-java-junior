@@ -42,6 +42,8 @@ Iteracion nro 8
 Iteracion nro 9
  ```
  En el statement ` if (letra == String.valueOf(i)) {` no llega a ser **true** porque esta comparando dirección de memoria
+ 
+ ----
  Si remplazamos con el metodo equals()  `if (letra.equals(String.valueOf(i)))` está comparando el contenido de los dos objetos y el resultado sería el siguiente:
  
  ```
