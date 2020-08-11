@@ -1,6 +1,5 @@
 package com.monica.model;
 
-import java.security.PublicKey;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +19,7 @@ public class Datasource {
     public static final String QUERY_CREATE_TABLE = "CREATE TABLE " + TABLE_POTLUCK + "IF NOT EXISTS " +
             " (" + COLUMN_POTLUCK_ID + "INTEGER NOT NULL, " + COLUMN_POTLUCK_NAME + "TEXT, " +
             COLUMN_POTLUCK_FOOD + " TEXT ," + COLUMN_POTLUCK_CONFIRM + " CHARACTER(1) ," + COLUMN_POTLUCK_SIGNUP_DATE +
-            " DATE, PRIMARY_KEY "+ (COLUMN_POTLUCK_ID) +")";
+            " TEXT, PRIMARY_KEY "+ (COLUMN_POTLUCK_ID) +")";
 
     public static final String QUERY_VIEW_POTLUCK_INFO ="SELECT * FROM " + TABLE_POTLUCK;
 
@@ -64,7 +63,7 @@ public class Datasource {
     public boolean open(){
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
-            //queryCreateTable = conn.prepareStatement(QUERY_CREATE_TABLE);
+            queryCreateTable = conn.prepareStatement(QUERY_CREATE_TABLE);
             queryPotluckInfoView = conn.prepareStatement(QUERY_VIEW_POTLUCK_INFO);
             queryPotluckById = conn.prepareStatement(QUERY_POTLUCK_BY_ID);
             queryPotluckByName = conn.prepareStatement(QUERY_POTLUCK_BY_NAME);

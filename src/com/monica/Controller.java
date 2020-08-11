@@ -2,17 +2,12 @@ package com.monica;
 
 import com.monica.model.Datasource;
 import com.monica.model.PotLuck;
-import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.concurrent.Task;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
-import javafx.stage.Stage;
+
 
 public class Controller {
     @FXML
@@ -39,7 +34,6 @@ public class Controller {
                 System.out.println(potLuck.toString());
             }
         }
-
 
     }
 }

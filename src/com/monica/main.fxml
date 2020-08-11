@@ -5,16 +5,17 @@
 <?import javafx.scene.control.cell.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.monica.Controller">
     <center>
         <TableView fx:id="potluckTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn prefWidth="${potluckTable.width}" text="Name">
-                    <cellValueFactory>
-                        <PropertyValueFactory property="name" />
-                    </cellValueFactory>
-                </TableColumn>
+                <TableColumn prefWidth="${potluckTable.width}" text="id"/>
+                <TableColumn prefWidth="${potluckTable.width}" text="name"/>
+                <TableColumn prefWidth="${potluckTable.width}" text="food"/>
+                <TableColumn prefWidth="${potluckTable.width}" text="confirmed"/>
+                <TableColumn prefWidth="${potluckTable.width}" text="signup_date"/>
             </columns>
             <BorderPane.margin>
                 <Insets right="10.0" />

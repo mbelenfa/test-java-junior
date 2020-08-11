@@ -3,7 +3,6 @@ package com.monica.model;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-import java.text.SimpleDateFormat;
 
 public class PotLuck {
     private SimpleIntegerProperty id;
