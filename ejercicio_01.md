@@ -15,7 +15,11 @@ El siguiente codigo `no es un programa de java válido`:
  
  
  ```java
- public static void main(String[] args) {
+ package com.example
+ 
+ public class Main {
+ 
+  public static void main(String[] args) {
         String letra = "6";
         String prefijo = "Iteracion nro ";
         for (int i = 0; i < 10; i++) {
@@ -27,6 +31,7 @@ El siguiente codigo `no es un programa de java válido`:
             }
         }
     }
+  }
  ```
  En ese caso el resultado es:
  ```
