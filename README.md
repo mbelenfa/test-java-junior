@@ -3,7 +3,7 @@
 ## Requisitos
 
 * Conocimientos básicos del lenguaje Java
-* IDE favorito
+* IDE favorito: IntellIJ
 * Git
 * Muchas ganas y curiosidad 💪
 
